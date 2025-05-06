@@ -14,6 +14,20 @@ Zend Engine v4.2.28, Copyright (c) Zend Technologies
 
 ## Task description
 
+1. Create a html page accessible under `/`.
+2. Create a form that asks the user for the `username` and `password` and submits them using POST to `/auth/login`. 
+3. In case of success (http status 200), the received json will have the following structure:
+```json
+{
+    "token": "<encoded_token>"
+}
+```
+4. Save the token in the browser local storage using `localStorage.setItem('token', <encoded_token>);`.
+5. Redirect to `/list-users`.
+6. Show an appropriate error message in case of wrong user or password (http status 401 - Unauthorized).
+7. Show an appropriate error message in case of any other error (http status 5xx).
+
+Use the unit test to validate your implementation.
 
 ### Unit test
 php vendor/bin/phpunit tests
