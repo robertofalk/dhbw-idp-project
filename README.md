@@ -46,11 +46,6 @@ Run the "diagnose" command to get more detailed diagnostics output.
 ```
 
 
-## Create an empty project
-```sh
-composer create-project codeigniter4/appstarter dhbw-idp
-```
-
 ## Running the project
 
 ```sh
