@@ -19,7 +19,7 @@
                 "-dxdebug.start_with_request=yes"
             ],
             "env": {
-                "XDEBUG_MODE": "debug,develop",
+                "XDEBUG_MODE": "debug,develop,coverage",
                 "XDEBUG_CONFIG": "client_port=${port}"
             }
         }

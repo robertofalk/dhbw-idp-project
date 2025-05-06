@@ -24,7 +24,7 @@ class IndexPageTest extends CIUnitTestCase
         $result = $this->get('/');
 
         // Assert that the response contains input fields for username and password
-        $result->assertSeeElement('input[name="username"]', 'Contains username field');
-        $result->assertSeeElement('input[name="password"]', 'Contains password field');
+        $result->assertSeeElement('input#username', 'Contains username field');
+        $result->assertSeeElement('input#password', 'Contains password field');
     }
 }
