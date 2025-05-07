@@ -13,7 +13,30 @@ Zend Engine v4.2.28, Copyright (c) Zend Technologies
 ```
 
 ## Task description
+1. Create a Controller accessible on `/auth/login` that accepts a JSON with `username` and `password`.
+2. Use `UserManager` class to validate the credentials.
+3. Return an appropriate error message in case of wrong user or password (http status 401 - Unauthorized).
+4. Return an appropriate error message in case `username` or `password` is not provided. (http status 400 - Bad Resquest).
+5. Generate a token using the logic below and return it using the following format:
 
+```json
+    "token": <generated_token>
+```
+
+### Token generation
+
+Below the payload structure.
+
+```json
+    "username": "HansZimmer"
+    "role": "Admin",
+    "iat": 1746651619
+```
+/* iat = issued at as NumericDate value
+
+1. Encode payload
+2. Hash + Encrypt encoded payload (called signature)
+3. Concatenate the signature with the encoded payload as <encoded_payload/>./<signature/>.
 
 ### Unit test
 php vendor/bin/phpunit tests
