@@ -1,5 +1,16 @@
 # dhbw-idp-project
 
+## Tasks
+
+| Group | Responsibility                              |
+|-------|---------------------------------------------|
+| 1     | Login page (html)                           |
+| 2     | Login/authentication and token generation   |
+| 3     | User List page (html)                       |
+| 4     | User List CRUD methods and token validation |
+| 5     | User Management (salt password hashing)     |
+| 6     | File-based storage                          |
+
 ## Dependecies
 
 - PHP >= 8.2
