@@ -36,7 +36,7 @@ Below the payload structure.
 
 1. Encode payload
 2. Hash + Encrypt encoded payload (called signature)
-3. Concatenate the signature with the encoded payload as <encoded_payload>.<signature>.
+3. Concatenate the signature with the encoded payload as `<encoded_payload>.<signature>`.
 
 ### Unit test
 php vendor/bin/phpunit tests
