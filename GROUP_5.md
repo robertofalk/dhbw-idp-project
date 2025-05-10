@@ -13,10 +13,13 @@ Zend Engine v4.2.28, Copyright (c) Zend Technologies
 ```
 
 ## Task description
-
+1. Develop all the methods (`get`, `create`, `getAll`, `update` and `delete`) of service class UserManager.
+    a. Use the service class `FileUserStorage` to persist the data.
+2. Create an appropriate `salt` function to hash the password.
+    a. Everytime a `password` is provided, make sure to keep it in memory only.
 
 ### Unit test
-php vendor/bin/phpunit tests
+~~php vendor/bin/phpunit tests~~
 
 ## Running the project
 
