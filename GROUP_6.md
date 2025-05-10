@@ -13,10 +13,11 @@ Zend Engine v4.2.28, Copyright (c) Zend Technologies
 ```
 
 ## Task description
-
+1. Implement the corresponding methods of class `FileUserStorage`.
+2. This class should persist the user data received in a file. 
 
 ### Unit test
-php vendor/bin/phpunit tests
+~~php vendor/bin/phpunit tests~~
 
 ## Running the project
 
